@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <h1>Library</h1>
+      </div>
+      <div class="addBookButton">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">+Add book</button>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <!-- <span class="close">&time;</span> -->
+          <form action="index.html" class="formData">
+            <input type="text" name="tittle" placeholder="Tittle" />
+            <input type="text" name="author" placeholder="Author" />
+            <input type="number" name="pages" placeholder="Pages" />
+            <div class="checkbox">
+              <label for="status"> Have you read it?</label>
+              <input type="checkbox" name="status" id="read" />
+            </div>
+            <button class="btnForm" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="main">
+        <!-- <div class="card">
+          <h3>name</h3>
+          <h4>Author</h4>
+          <h5>pages</h5>
+          <h5>status</h5>
+        </div>
+        <div class="card">
+          <h3>name</h3>
+          <h4>Author</h4>
+          <h5>pages</h5>
+          <h5>status</h5>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
