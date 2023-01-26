@@ -23,12 +23,19 @@
         <div class="modal-content">
           <!-- <span class="close">&time;</span> -->
           <form action="index.html" class="formData">
-            <input type="text" name="tittle" placeholder="Tittle" />
-            <input type="text" name="author" placeholder="Author" />
-            <input type="number" name="pages" placeholder="Pages" />
+            <input type="text" name="tittle" placeholder="Tittle" required />
+            <input type="text" name="author" placeholder="Author" required />
+            <input
+              type="number"
+              name="pages"
+              placeholder="Pages"
+              min="1"
+              max="500"
+              required
+            />
             <div class="checkbox">
               <label for="status"> Have you read it?</label>
-              <input type="checkbox" name="status" id="read" />
+              <input type="checkbox" name="status" id="read" required />
             </div>
             <button class="btnForm" type="submit">Submit</button>
           </form>
